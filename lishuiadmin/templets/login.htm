@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<meta charset="utf-8" />
+<title>陕西省丽水商会后台管理系统</title>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+if (window.parent !== window.self) {
+	document.write = '';
+	window.parent.location.href = window.self.location.href;
+	setTimeout(function () {
+		document.body.innerHTML = '';
+	}, 0);
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="inner">
+    <div class="header">
+      <h1><?php echo $cfg_softname." ".$cfg_version; ?></h1>
+    </div>
+    <div class="qzone_login clearfix">
+      <div class="qzone_cont" id="_pt">
+	  <p style="font-size:24px">陕西省丽水商会后台管理系统</p>
+        <!-- <li ><img src="/images/login_bg.jpg" alt="陕西省丽水商会后台管理系统"></li> -->
+      </div>
+      <!-- end qzone_cont -->
+      <div class="login_main">
+        <p class="wrong_notice" id="err_m" style="display:none;"></p>
+         <form name="form1" method="post" action="login.php">
+      <input type="hidden" name="gotopage" value="<?php if(!empty($gotopage)) echo RemoveXSS($gotopage);?>" />
+      <input type="hidden" name="dopost" value="login" />
+      <input name='adminstyle' type='hidden' value='newdedecms' />
+          <ul class="login_list"  id="web_login">
+            <li class="login_input">
+              <input  value=""  id="u" name="userid"  class="input_txt" tabindex="1"   type="text" value="" placeholder="帐号名" title="帐号名"  />
+            </li>
+            <li class="login_input">
+              <input maxlength=16 type="password"  id="p" name="pwd" tabindex="2"   class="input_txt" type="text" value=""  placeholder="密码" title="密码"/>
+            </li>
+            
+            <li class="yanzhengma clearfix" id="verifytip"> <span id="verifyinput">
+              <input  id="verifycode" name="validate" maxlength=5 tabindex="3" class="input_txt" type="text" value=""  placeholder="请输入验证码" />
+              </span>
+              <div class="yanzhengma_box" id="verifyshow"> <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="../include/vdimgck.php" width="130" height="50"/><a href="#" onClick="changeAuthCode();">看不清？ </a> </div>
+            </li>
+            
+            <li>
+              <button type="submit" class="login_btn" tabindex="4" id="subbtn" name="sm1" onclick="this.form.submit();">登录</button>
+            </li>
+          </ul>
+        </form>
+        <div class="quick_login" id="qlogin"> </div>
+      </div>
+    </div>
+    <div class="platform_box"> </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="inner">
+    <div class="copyright clearfix">
+      <p class="copyright_en">© 2015西安格创网络版权所有 陕ICP备15002423号</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

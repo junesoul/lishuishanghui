@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("global","",167,192);
+$z[0][4]['name']="cfg_cmsurl";
+$z[1]=Array("global","",258,283);
+$z[1][4]['name']="cfg_cmsurl";
+$z[2]=Array("global","",345,370);
+$z[2][4]['name']="cfg_cmsurl";
+$z[3]=Array("global","",403,429);
+$z[3][4]['name']="cfg_dataurl";
+$z[4]=Array("global","",578,605);
+$z[4][4]['name']="cfg_basehost";
+$z[5]=Array("global","",678,705);
+$z[5][4]['name']="cfg_basehost";
+$z[6]=Array("global","",708,734);
+$z[6][4]['name']="cfg_webname";
+$z[7]=Array("global","",883,910);
+$z[7][4]['name']="cfg_basehost";
+$z[8]=Array("global","",922,954);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",1002,1028);
+$z[9][4]['name']="cfg_webname";
+$z[10]=Array("global","",1337,1362);
+$z[10][4]['name']="cfg_cmsurl";
+$z[11]=Array("channel","\r\n      	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>\r\n      	",1402,1645);
+$z[11][4]['type']="top";
+$z[11][4]['row']="10";
+$z[11][4]['currentstyle']="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>";
+$z[12]=Array("global","",1737,1762);
+$z[12][4]['name']="cfg_cmsurl";
+$z[13]=Array("tag","\r\n            <li><a href='[field:link/]'>[field:tag /]</a></li>\r\n          ",2575,2705);
+$z[13][4]['row']="10";
+$z[13][4]['getall']="1";
+$z[13][4]['sort']="month";
+$z[14]=Array("arclist","\r\nlinkarr[[field:global.autoindex/]] = \"[field:arcurl/]\";\r\npicarr[[field:global.autoindex/]]  = \"[field:litpic/]\";\r\ntextarr[[field:global.autoindex/]] = \"[field:title function='html2text(@me)'/]\";\r\n",3417,3664);
+$z[14][4]['typeid']="11";
+$z[14][4]['row']="5";
+$z[15]=Array("global","",4238,4268);
+$z[15][4]['name']="cfg_templeturl";
+$z[16]=Array("global","",4554,4584);
+$z[16][4]['name']="cfg_templeturl";
+
+?>
